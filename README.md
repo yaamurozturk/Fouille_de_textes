@@ -2,8 +2,6 @@
 
 Introduction
 ---
-Introduction
-
 La fouille de textes et l’apprentissage automatique occupent une place essentielle dans le domaine du traitement automatique des langues depuis qu’il est possible d'accéder à de grandes quantités de données. Il s’agit principalement de la construction de programmes qui permettent de traiter des données textuelles de façon numérique, automatique et quantitative, en visant des objectifs concrets, notamment, la classification de textes.
 
 Dans le cadre de ce projet, à partir des démarches de l’apprentissage automatique supervisé, nous avons mis en place différents algorithmes de classification pour les tester. Plus spécifiquement, nous voulions classer binairement des synopsis de films en fonction de leur genre en utilisant diverses ressources. Dans ce travail, nous décrirons  les différents algorithmes de classification via le logiciel Weka et à travers les fonctions et algorithmes disponibles dans la bibliothèque scikit-learn en Python. Notre but, enfin, est de pouvoir montrer et expliquer le fonctionnement de ces différents classifieurs et les évaluer de manière qualitative et quantitative.
