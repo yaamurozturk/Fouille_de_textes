@@ -109,7 +109,8 @@ SVM : Support Vector Machines ou Séparateurs à vaste marges
 
 Ce classifieur de haute complexité, qui a donné pendant plusieurs années les meilleurs résultats parmi les algorithmes existant, travaille à partir des notions de hyperplan et de marge. Pour bien classer les données, le classifieur essaie de trouver le meilleur hyperplans pour diviser binairement et successivement les données. Le meilleur hyperplan est celui qui peut tracer une division nette entre les éléments de deux classes, avec le plus large marge possible entre les vecteurs pris en compte pour tracer l’hyperplan. Maintenir une marge vaste garantit la généralisation de la classification et évite le sur-apprentissage. 
 
-Néanmoins, comme dans notre cas, les données ne sont pas toujours faciles à séparer de façon nette. C’est pour cela que le classifieur incorpore deux “astuces” : 1) des pénalités pour chaque élément qui n’a pas pu être bien classé et 2) la possibilité de représenter les données dans un dimension plus large pour trouver une hyperplan capable de bien séparer les données. 
+Néanmoins, comme dans notre cas, les données ne sont pas toujours faciles à séparer de façon nette. C’est pour cela que le classifieur incorpore deux “astuces” : 1) des pénalités pour chaque élément qui n’a pas pu être bien classé et deuxiemement, la possibilité de représenter les données dans un dimension plus large pour trouver une hyperplan capable de bien séparer les données. 
+
 <img width="236" alt="fdt9" src="https://user-images.githubusercontent.com/77155381/170558947-ee3dcb28-6306-4d65-afbe-0a9ad75a55a3.PNG">
 
 - Résultats et appréciations
