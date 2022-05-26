@@ -1,4 +1,7 @@
 # Fouille de textes
+This is the final project for the text mining course (M1) made by me and Santiago Herrera Yanez. Objective is to classify movie synopses using Scikit learn and Weka, collected using Beautiful Soup on Rotten Tomatoes. 
+
+Professor: Loïc Grobol
 
 Introduction
 ---
