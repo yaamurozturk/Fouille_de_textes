@@ -38,7 +38,7 @@ Enfin, nous avons réalisé le travail en deux parts égales.
 
 Expériences réalisées
 ---
-1)Classe Majoritaire (ZeroR)
+1) Classe Majoritaire (ZeroR)
 
 
 L'algorithme de “classe majoritaire”, qui s'appelle ZeroR sur Weka, fournit une méthode de classification simple. Il est appelé “simple” parce qu'il prédit la classe qui a la plus grande fréquence. Il est utile pour déterminer une base de référence pour d'autres méthodes de classification. Sur Weka c’est la méthode de classification par défaut
@@ -49,7 +49,7 @@ Comme prévu, la classe majoritaire ne donne pas de bons résultats. Lorsque nou
 
 <img width="444" alt="fdt2" src="https://user-images.githubusercontent.com/77155381/170557802-be69f426-35ce-4237-a799-9cbc273d4f5c.PNG">
 
-2)K-plus proches voisins
+2) K-plus proches voisins
 
 Cet algorithme, qualifié de "paresseu", associe des nouvelles données à la classe majoritaire du sous-ensemble le plus proche, composé par les k données voisines. Les k-plus proches voisins sont, donc, les k valeurs que se trouvent le plus proches l'une de l'autre.
 
@@ -59,7 +59,7 @@ L’obtention d’assez bons résultats en utilisant une représentation TF-IDF,
 
 Enfin, Il s’agit d’un modèle facile à développer et d'une interprétation simple, qui malgré les bons résultats que nous avons obtenus, n’est ni plus efficace pour une grande quantité de données, ni pour une taille de données assez limitée comme la nôtre. 
 
-- <img width="509" alt="fdt3" src="https://user-images.githubusercontent.com/77155381/170558175-ccd32c5d-91cf-4f33-8ff0-79567babde08.PNG">
+<img width="509" alt="fdt3" src="https://user-images.githubusercontent.com/77155381/170558175-ccd32c5d-91cf-4f33-8ff0-79567babde08.PNG">
 <img width="301" alt="fdt4" src="https://user-images.githubusercontent.com/77155381/170558246-88b2e5dd-b23e-4103-8d46-2f0210d24e5f.PNG">
 
 - Résultats et appréciations
@@ -72,6 +72,7 @@ Arbres de décisions
 Nous avons appliqué deux algorithmes différents de la famille des arbres de décisions. Premièrement, à travers Weka, nous avons utilisé le J48 (similaire à C4.5). Deuxièmement, via scikit-learn, le classifieur Forest Random.
 
 Les arbres de décision fonctionnent par des méthodes symboliques et cherchent à classer les données à partir de celles qui sont le plus informatives ou le plus discriminantes pour ensuite pouvoir évaluer quelles sont celles qui diffèrent le moins dans notre corpus. Pour trouver quels sont les éléments le plus discriminant, l'algorithme évalue la différence ou l'homogénéité d’une donnée en calculant la fonction Gini ou l’entropie. Cette évaluation se réalise aussi grâce à l’utilisation des seuils dans le cas où un attribut ou un trait parmi nos données n’est pas définitoire pour classer notre corpus. Voici un exemple extrait de l’évaluation que nous avons fait :
+
 <img width="278" alt="fdt5" src="https://user-images.githubusercontent.com/77155381/170558446-b3b76b7c-0d57-4b19-a327-e321789cdd17.PNG">
 
 Le mot le plus discriminant dans notre corpus est le mot “alien”. Un texte avec ce mot sera classé comme appartenant à la classe “sci-fi”. Un peu plus haut, on peut voir que si les mots “victime” et “future” sont cooccurrents, le texte sera classé en tant que “sci-fi”.
@@ -133,3 +134,6 @@ Dans le cadre de ce modeste travail, la plus grande différence entre Weka et sc
 Les résultats obtenus tout au long de ce travail, à partir de l'implémentation de différents classifieurs, nous permettent de réfléchir non seulement aux performances de chaque algorithme mais aussi au classifieur le plus approprié pour notre tâche. En effet, parmi tous les classifieurs utilisés, certains sont particulièrement intéressants pour nous. Nous croyons que, étant donné la taille de notre corpus, le classifieur Naïve Bayes est la meilleure option à développer pour diverses raisons : c’est celui qui a donné des résultats comparables et meilleures aux classifieurs de type SVM, ayant la capacité d'être facilement incrémental, même s’il s’agit d’un algorithme moins complexe. En outre, les algorithmes des arbres de décisions ont été une surprise pour nous, par leur lisibilité, car ils nous ont aidés à mieux comprendre notre corpus, et aussi pour ses résultats dans sa version RandomForest. 
 
 Enfin, il y a encore beaucoup à améliorer et différents classifieurs encore à tester. Évidemment, il est nécessaire d'élargir nos corpus pour atteindre de meilleurs résultats. Nous devons aussi améliorer la normalisation de données via scikit-learn. Nous croyons que ce sont deux chemins possibles, entre autres, pour continuer à explorer la tâche de la classification. 
+
+<img width="382" alt="fdt12" src="https://user-images.githubusercontent.com/77155381/170560316-cac66c6c-020d-49f1-9fff-2e07a1175cb5.PNG">
+
